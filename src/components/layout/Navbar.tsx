@@ -1,13 +1,22 @@
+'use client'
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { LinkedInIcon, GitHubIcon, GmailIcon } from "@icons";
+import { NAV_LINKS } from "@/lib/constants";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  
+  // Find the current page label or default to "Portfolio"
+  const currentPage = NAV_LINKS.find(link => link.href === pathname)?.label || "Portfolio";
+  
   return (
     <nav className="w-full bg-background">
       <div className="container mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-primary">
-            Portfolio
+            {currentPage}
           </Link>
           <div className="flex gap-4">
             {/* LinkedIn Icon */}

@@ -9,7 +9,7 @@ const SideNavigation = () => {
   const pathname = usePathname()
   
   const navItems = [
-    { icon: HomeIcon, href: '/' },
+    { icon: HomeIcon, href: '/home' },
     { icon: UserIcon, href: '/about' },
     { icon: FolderIcon, href: '/projects' },
     { icon: MailIcon, href: '/contact' },

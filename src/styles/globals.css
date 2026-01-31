@@ -4,6 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #5170ff;
+  --heading:#dfe3f9;
+  --secondary:#b4b4b4;
+  --text:#d9d9d9;
 }
 
 @theme inline {
@@ -12,6 +15,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary);
+  --color-heading: var(--heading);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
