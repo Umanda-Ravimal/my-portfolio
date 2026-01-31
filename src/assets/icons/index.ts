@@ -17,4 +17,6 @@ export { PostgreSQLIcon } from "./PostgreSQLIcon";
 export { MongoDBIcon } from "./MongoDBIcon";
 export { DockerIcon } from "./DockerIcon";
 export { AWSIcon } from "./AWSIcon";
+export { TensorFlowIcon } from "./TensorFlowIcon";
+export { PyTorchIcon } from "./PyTorchIcon";
 

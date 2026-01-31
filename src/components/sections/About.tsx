@@ -97,7 +97,7 @@ export default function About() {
                   setCurrentIndex(index);
                   setIsTransitioning(false);
                 }}
-                className={`w-2 h-2 rounded-full transition-all ${
+                className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
                   index === currentIndex
                     ? "bg-primary w-8"
                     : "bg-gray-400 dark:bg-gray-600 hover:bg-primary/50"

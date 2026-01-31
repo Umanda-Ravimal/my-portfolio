@@ -44,10 +44,10 @@ export default function SkillsBox({
               </div>
             ) : (
               <span
-                className="text-xs font-medium"
+                className="text-md font-md font-bold"
                 style={{ color: skill.iconColor || "#5170ff" }}
               >
-                {skill.name.substring(0, 2).toUpperCase()}
+                {skill.name.toUpperCase()}
               </span>
             )}
             {/* Tooltip */}

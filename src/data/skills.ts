@@ -12,6 +12,8 @@ import {
   MongoDBIcon,
   DockerIcon,
   AWSIcon,
+  TensorFlowIcon,
+  PyTorchIcon,
 } from "@/assets/icons";
 
 export interface Skill {
@@ -96,11 +98,13 @@ const baseSkills: Omit<Skill, "icon">[] = [
   {
     name: "TensorFlow",
     category: "ai-ml",
+    iconName: "tensorflow",
     iconColor: "#FF6F00",
   },
   {
     name: "PyTorch",
     category: "ai-ml",
+    iconName: "pytorch",
     iconColor: "#EE4C2C",
   },
   {
@@ -138,6 +142,8 @@ const getIcon = (iconName?: string): ReactNode | undefined => {
     mongodb: React.createElement(MongoDBIcon, { width: 32, height: 32 }),
     docker: React.createElement(DockerIcon, { width: 32, height: 32 }),
     aws: React.createElement(AWSIcon, { width: 32, height: 32 }),
+    tensorflow: React.createElement(TensorFlowIcon, { width: 32, height: 32 }),
+    pytorch: React.createElement(PyTorchIcon, { width: 32, height: 32 }),
   };
 
   return iconMap[iconName.toLowerCase()];
