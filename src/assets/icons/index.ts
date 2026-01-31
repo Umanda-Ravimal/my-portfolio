@@ -11,4 +11,10 @@ export { NextJSIcon } from "./NextJSIcon";
 export { MaterialUIIcon } from "./MaterialUIIcon";
 export { TailwindIcon } from "./TailwindIcon";
 export { ZustandIcon } from "./ZustandIcon";
+export { NestJSIcon } from "./NestJSIcon";
+export { ExpressIcon } from "./ExpressIcon";
+export { PostgreSQLIcon } from "./PostgreSQLIcon";
+export { MongoDBIcon } from "./MongoDBIcon";
+export { DockerIcon } from "./DockerIcon";
+export { AWSIcon } from "./AWSIcon";
 

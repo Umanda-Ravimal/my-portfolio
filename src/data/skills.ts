@@ -6,11 +6,17 @@ import {
   MaterialUIIcon,
   TailwindIcon,
   ZustandIcon,
+  NestJSIcon,
+  ExpressIcon,
+  PostgreSQLIcon,
+  MongoDBIcon,
+  DockerIcon,
+  AWSIcon,
 } from "@/assets/icons";
 
 export interface Skill {
   name: string;
-  category: "frontend" | "backend" | "tools" | "other";
+  category: "frontend" | "backend" | "ai-ml";
   level?: "beginner" | "intermediate" | "advanced";
   iconName?: string;
   iconColor?: string;
@@ -49,13 +55,69 @@ const baseSkills: Omit<Skill, "icon">[] = [
     category: "frontend",
     iconName: "zustand",
   },
-  // Add more skills here
-  // Example without icon (will show initials):
-  // {
-  //   name: "Vue.js",
-  //   category: "frontend",
-  //   iconColor: "#4FC08D",
-  // },
+  // Backend Skills
+  {
+    name: "NestJS",
+    category: "backend",
+    iconName: "nestjs",
+    iconColor: "#E0234E",
+  },
+  {
+    name: "Express.js",
+    category: "backend",
+    iconName: "express",
+    iconColor: "#000000",
+  },
+  {
+    name: "PostgreSQL",
+    category: "backend",
+    iconName: "postgresql",
+    iconColor: "#336791",
+  },
+  {
+    name: "MongoDB",
+    category: "backend",
+    iconName: "mongodb",
+    iconColor: "#47A248",
+  },
+  {
+    name: "Docker",
+    category: "backend",
+    iconName: "docker",
+    iconColor: "#2496ED",
+  },
+  {
+    name: "AWS",
+    category: "backend",
+    iconName: "aws",
+    iconColor: "#FF9900",
+  },
+  // AI/ML Skills
+  {
+    name: "TensorFlow",
+    category: "ai-ml",
+    iconColor: "#FF6F00",
+  },
+  {
+    name: "PyTorch",
+    category: "ai-ml",
+    iconColor: "#EE4C2C",
+  },
+  {
+    name: "YOLO",
+    category: "ai-ml",
+    iconColor: "#00D9FF",
+  },
+  {
+    name: "CNN",
+    category: "ai-ml",
+    iconColor: "#5170FF",
+  },
+  {
+    name: "NLP",
+    category: "ai-ml",
+    iconColor: "#5170FF",
+  },
 ];
 
 // Icon mapping function using React.createElement to avoid JSX in .ts file
@@ -70,6 +132,12 @@ const getIcon = (iconName?: string): ReactNode | undefined => {
     materialui: React.createElement(MaterialUIIcon, { width: 32, height: 32 }),
     tailwind: React.createElement(TailwindIcon, { width: 32, height: 32 }),
     zustand: React.createElement(ZustandIcon, { width: 32, height: 32 }),
+    nestjs: React.createElement(NestJSIcon, { width: 32, height: 32 }),
+    express: React.createElement(ExpressIcon, { width: 32, height: 32 }),
+    postgresql: React.createElement(PostgreSQLIcon, { width: 32, height: 32 }),
+    mongodb: React.createElement(MongoDBIcon, { width: 32, height: 32 }),
+    docker: React.createElement(DockerIcon, { width: 32, height: 32 }),
+    aws: React.createElement(AWSIcon, { width: 32, height: 32 }),
   };
 
   return iconMap[iconName.toLowerCase()];
