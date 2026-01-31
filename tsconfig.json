@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"],
+      "@icons": ["./src/assets/icons"],
+      "@icons/*": ["./src/assets/icons/*"]
     }
   },
   "include": [
