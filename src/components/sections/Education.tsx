@@ -12,42 +12,42 @@ export default function Education() {
   }
 
   return (
-    <div className="space-y-6">
-      {education.map((edu) => (
-        <div key={edu.id} className="space-y-2">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-            <h3 className="text-xl sm:text-2xl font-semibold text-heading dark:text-heading">
-              {edu.degree}
-            </h3>
-            <p className="text-sm sm:text-base text-secondary dark:text-secondary">
-              {edu.startDate} {edu.endDate ? `- ${edu.endDate}` : ""}
-            </p>
-          </div>
-          <p className="text-lg text-primary dark:text-primary font-medium">
-            {edu.institution}
-            {edu.location && `, ${edu.location}`}
-          </p>
-          {edu.description && edu.description.length > 0 && (
-            <ul className="list-disc list-inside space-y-1 text-text dark:text-text">
-              {edu.description.map((desc, idx) => (
-                <li key={idx}>{desc}</li>
-              ))}
-            </ul>
-          )}
-          {edu.achievements && edu.achievements.length > 0 && (
-            <div className="mt-2">
-              <p className="text-sm font-semibold text-secondary dark:text-secondary mb-1">
-                Achievements:
+    <div className="relative pl-10">
+      {/* Timeline line */}
+      <div 
+        className="absolute left-2 top-1 h-[150%] w-0.5"
+        style={{
+          background: 'linear-gradient(to bottom, var(--primary), transparent)'
+        }}
+      ></div>
+
+      <div className="space-y-8">
+        {education.map((edu, index) => (
+          <div key={edu.id} className="relative">
+            {/* Timeline circle */}
+            <div className="absolute -left-[39px] top-1 w-4 h-4 rounded-full bg-primary dark:bg-primary border-2 border-black dark:border-black"></div>
+
+            <div className="space-y-2">
+              <div className="flex">
+                <h3 className="w-4/6 text-lg sm:text-xl font-semibold text-heading dark:text-heading">
+                  {edu.degree}
+                </h3>
+                <p className="text-right text-sm sm:text-base text-secondary dark:text-secondary">
+                  ({edu.startDate} – {edu.endDate || "Present"})
+                </p>
+              </div>
+              <p className="text-base sm:text-lg text-secondary dark:text-secondary font-medium">
+                {edu.institution}
               </p>
-              <ul className="list-disc list-inside space-y-1 text-text dark:text-text">
-                {edu.achievements.map((achievement, idx) => (
-                  <li key={idx}>{achievement}</li>
-                ))}
-              </ul>
+              {edu.achievements && edu.achievements.length > 0 && (
+                <p className="text-sm font-semibold sm:text-base text-text dark:text-text">
+                  {edu.achievements[0]}
+                </p>
+              )}
             </div>
-          )}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

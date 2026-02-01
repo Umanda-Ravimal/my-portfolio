@@ -68,7 +68,7 @@ export default function About() {
       {/* Skills Carousel */}
       <div className="relative min-h-[200px]">
         <div
-          className={`transition-opacity duration-500 ${
+          className={`transition-opacity duration-500 cursor-pointer ${
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
           onMouseEnter={() => setIsPaused(true)}
