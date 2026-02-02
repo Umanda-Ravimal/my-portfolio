@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className='flex flex-col '>
           <Navbar />
-          <main className='flex-1 min-h-[85vh] px-24 overflow-y-auto'>
+          <main className='flex-1 min-h-[85vh] px-36 overflow-y-auto'>
             {children}
             <SideNavigation />
           </main>
