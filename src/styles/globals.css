@@ -43,3 +43,15 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+@media (min-width: 1024px) {
+  .backdrop-img {
+    height: 79% !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .backdrop-img {
+    height: 77% !important;
+  }
+}

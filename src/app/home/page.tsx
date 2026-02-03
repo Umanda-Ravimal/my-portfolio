@@ -58,7 +58,7 @@ export default function Home() {
         <Image
           src={backdropImage}
           alt="Backdrop"
-          className="object-cover object-center top-13 absolute md:scale-90 lg:scale-90 xl:scale-100"
+          className="backdrop-img object-cover object-center top-13 absolute md:scale-90 lg:scale-90 xl:scale-100"
           priority
           style={{ height: '85%' }}
         />
