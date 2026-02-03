@@ -5,6 +5,17 @@ export interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  // Add your social links here
+  {
+    name: "GitHub",
+    url: "https://github.com/Umanda-Ravimal",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/umandaravimal/",
+  },
+  {
+    name: "Email",
+    url: "mailto:Umandaravimal@gmail.com",
+  },
 ];
 

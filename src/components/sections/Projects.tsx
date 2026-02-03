@@ -48,7 +48,7 @@ export default function Projects({ onProjectClick }: ProjectsProps) {
   }
 
   return (
-    <div className="flex grid grid-cols-2 gap-3 md:gap-4 h-full w-3/4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 h-full w-full md:w-3/4 overflow-y-auto">
       {projects.slice(0, 4).map((project) => {
         const imageSrc = project.imageKey ? projectImages[project.imageKey] : null;
 
@@ -56,7 +56,7 @@ export default function Projects({ onProjectClick }: ProjectsProps) {
           <div
             key={project.id}
             onClick={() => handleProjectClick(project)}
-            className="relative group h-full flex flex-col border-2 border-primary rounded-lg overflow-hidden"
+            className="relative group flex flex-col border-2 border-primary rounded-lg overflow-hidden md:h-full h-[180px] sm:h-[220px] md:h-full"
           >
             {/* Project Image Container with Blue Banner Overlay */}
             <div className="relative w-full h-full bg-black flex-shrink-0">

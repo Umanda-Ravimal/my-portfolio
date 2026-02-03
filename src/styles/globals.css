@@ -55,3 +55,39 @@ body {
     height: 77% !important;
   }
 }
+
+/* @media (min-width: 1024px) {
+  .backdrop-img2 {
+    height: 60% !important;
+    top: 115px !important;
+
+  }
+}
+
+@media (min-width: 1224px) {
+  .backdrop-img2 {
+    height: 80% !important;
+  }
+} */
+
+/* @media (max-width: 1124px) {
+  .backdrop-img2 {
+    height: 60% !important;
+  }
+}*/
+.backdrop-img2 {
+  height: 6cap !important;
+}
+
+@media (min-width: 1130px) {
+  .backdrop-img2 {
+    height: 75% !important;
+  }
+} 
+
+
+@media (min-width: 1360px) {
+  .backdrop-img2 {
+    height: 88% !important;
+  }
+} 

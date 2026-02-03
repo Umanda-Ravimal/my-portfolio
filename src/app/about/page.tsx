@@ -43,23 +43,27 @@ export default function About() {
   return (
     <div className="flex min-h-[85vh] bg-white font-sans dark:bg-black">
       {/* Left side - Backdrop Image with Home Image on top */}
-      <div className="hidden lg:block w-[45%] min-h-[85vh] relative overflow-hidden bg-black">
+      <div className="hidden lg:block w-[45%] top-13 xl:top-0 relative overflow-hidden bg-black">
         {/* Backdrop Image - Background layer */}
-        <Image
-          src={backdropImage}
-          alt="Backdrop"
-          className="object-cover object-center top-13 absolute"
-          priority
-          style={{ height: '88%', width: '95%' }}
-        />
-        {/* Home Image - Foreground layer */}
-        <Image
-          src={myAboutImage}
-          alt="About"
-          className="object-contain object-center z-1 absolute"
-          priority
-          style={{ height:'100%', left:'40px' }}
-        />
+        <div className="flex justify-center">
+          <Image
+            src={backdropImage}
+            alt="Backdrop"
+            className="backdrop-img2 object-cover object-center absolute"
+            priority
+            // fill
+            style={{ width: '95%' }}
+          />
+          {/* Home Image - Foreground layer */}
+          <Image
+            src={myAboutImage}
+            alt="About"
+            className="object-contain object-center z-1 absolute"
+            priority
+            
+            style={{ left: '40px' }}
+          />
+        </div>
       </div>
 
       {/* Right side - Content */}

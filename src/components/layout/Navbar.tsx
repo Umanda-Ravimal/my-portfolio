@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className="flex gap-4">
             {/* LinkedIn Icon */}
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/umandaravimal/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2"
@@ -38,7 +38,7 @@ export default function Navbar() {
 
             {/* Gmail Icon */}
             <a
-              href="mailto:your.email@gmail.com"
+              href="mailto:Umandaravimal@gmail.com"
               className="p-2"
               aria-label="Email"
             >
@@ -51,7 +51,7 @@ export default function Navbar() {
 
             {/* GitHub Icon */}
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Umanda-Ravimal"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2"

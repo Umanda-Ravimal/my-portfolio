@@ -19,12 +19,12 @@ export default function Tabs({
   className = "",
 }: TabsProps) {
   return (
-    <div className={`flex items-center justify-around gap-2 p-1 sm:gap-3 ${className}`}>
+    <div className={`flex items-center justify-around gap-1 p-1 sm:gap-3 ${className}`}>
       {items.map((item) => (
         <button
           key={item.id}
           onClick={() => onTabChange(item.id)}
-          className={`px-4 py-2 rounded-full text-lg font-bold transition-all cursor-pointer ${
+          className={`px-2 md:px-4 py-2 rounded-full text-xs sm:text-sm md:text-lg font-bold transition-all cursor-pointer ${
             activeTab === item.id
               ? "bg-primary text-background dark:text-background"
               : "bg-transparent text-primary dark:text-primary hover:border-primary/50"

@@ -35,7 +35,7 @@ export default function SkillsBox({
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="group relative w-14 h-14 rounded-lg bg-black dark:bg-black border border-gray-800 dark:border-gray-800 flex items-center justify-center hover:border-primary/50 dark:hover:border-primary/50 transition-all cursor-pointer"
+            className="group relative w-10 h-10 md:w-12 md:h-12  rounded-lg bg-black dark:bg-black border border-gray-800 dark:border-gray-800 flex items-center justify-center hover:border-primary/50 dark:hover:border-primary/50 transition-all cursor-pointer"
             title={skill.name}
           >
             {skill.icon ? (
@@ -44,7 +44,7 @@ export default function SkillsBox({
               </div>
             ) : (
               <span
-                className="text-md font-md font-bold"
+                className="text-sm font-sm md:text-md font-bold"
                 style={{ color: skill.iconColor || "#5170ff" }}
               >
                 {skill.name.toUpperCase()}
