@@ -226,7 +226,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                     </div>
 
                     {/* Links */}
-                    {(project.githubUrl || project.liveUrl) && (
+                    {/* {(project.githubUrl || project.liveUrl) && (
                       <div className="flex gap-4 mt-6 flex-shrink-0">
                         {project.githubUrl && (
                           <a
@@ -249,7 +249,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                           </a>
                         )}
                       </div>
-                    )}
+                    )} */}
                 </div>
             </div>
         </div>
