@@ -40,6 +40,16 @@ export const projects: Project[] = [
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
   },
+  {
+    id: "4",
+    title: "Conductor",
+    description: "An AI-powered browser automation platform that turns natural-language goals into real browser actions, streaming live progress, screenshots, and logs in real time.",
+    detailedDescription: "Conductor lets users describe automation goals in plain English — such as 'top 5 NestJS projects on GitHub' — and handles the rest automatically. A Gemini-powered LangChain planner converts the goal into a typed JSON execution plan; Puppeteer with stealth plugins carries it out in a headless Chrome instance; and results, step logs, and base64 screenshots are streamed live to the frontend over Socket.IO.\n\nAs the sole developer, I designed and built the full monorepo using Nx, with a Next.js 14 App Router frontend and a NestJS backend sharing types via a dedicated library. I implemented the AI planning pipeline using LangChain and Google Gemini, the real-time event system over Socket.IO, and the Puppeteer automation layer supporting web-search, scraper, and health-check task types. Task history is persisted in PostgreSQL via Prisma, and the entire stack runs locally with a single npm run dev command backed by Docker Compose.",
+    imageKey: "conductor",
+    technologies: ["Next.js", "NestJS", "TypeScript", "Socket.IO", "Prisma", "Tailwind CSS", "Zustand"],
+    githubUrl: "https://github.com/Umanda-Ravimal/Conductor",
+    liveUrl: "https://example.com",
+  }
   // {
   //   id: "4",
   //   title: "Project Four",

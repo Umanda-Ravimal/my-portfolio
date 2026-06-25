@@ -6,6 +6,7 @@ import { projects, Project } from "@/data/projects";
 import ProjectDetail from "./ProjectDetail";
 import webcvrImage from "@/assets/images/webcvr.webp";
 import teelanSaloonImage from "@/assets/images/teelan-saloon-main.webp";
+import conductorImage from "@/assets/images/conductor.png";
 import aiDevImage from "@/assets/images/aiDev.png";
 import Button from "@/components/ui/Button";
 
@@ -14,6 +15,7 @@ export const projectImages: Record<string, any> = {
   webcvr: webcvrImage,
   "teelan-saloon": teelanSaloonImage,
   aiDev: aiDevImage,
+  conductor: conductorImage,
   // Add more images as needed
 };
 

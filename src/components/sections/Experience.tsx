@@ -96,7 +96,7 @@ export default function Experience() {
     >
       {/* Timeline line */}
       <div 
-        className="absolute left-2 top-1 h-[150%] w-0.5"
+        className="absolute left-2 top-1 h-[300%] w-0.5"
         style={{
           background: 'linear-gradient(to bottom, var(--primary), transparent)'
         }}
